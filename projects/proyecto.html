@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- TITULO DE LA PESTAÑA DEL NAVEGADOR -->
+    <title>Tarjetas de Proyectos</title>
+    <!-- HOJA DE ESTILOS BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <!-- HOJA DE ESTILOS PERSONALIZADA -->
+    <link rel="stylesheet" href="/css/projectos.css">
+    <!-- SCRIPT PARA CARGAR NAVBAR Y FOOTER -->
+    <script defer src="/js/script.js"></script>
+    <!-- ICONO FAVICON -->
+    <link rel="icon" type="image/x-icon" href="/img/logos/logo-fav.png">
+    <!-- HOJA DE ESTILOS SWIPER -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <!-- ICONOS DE BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- CONTENEDOR DE LA BARRA DE NAVEGACIÓN -->
+    <div id="navbar-container"></div>
+
+    <!-- MODAL PRINCIPAL PARA CONTENIDO DINÁMICO -->
+    <div class="modal fade" id="coverflowModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content">
+                <!-- ENCABEZADO DEL MODAL -->
+                <div class="modal-header bg-navbar text-white">
+                    <h5 class="modal-title fw-bold" id="dynamicModalTitle">Título del Proyecto</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Cerrar"></button>
+                </div>
+                <!-- CUERPO DEL MODAL -->
+                <div class="modal-body">
+                    <!-- CONTENIDO DINÁMICO DEL MODAL -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SECCIÓN DE TARJETAS DE PROYECTOS -->
+    <div class="container py-5 mt-5">
+        <!-- TÍTULO PRINCIPAL DE LA SECCIÓN -->
+        <h2 class="text-center mb-5">Explora Mis Proyectos Destacados</h2>
+
+        <!-- CONTENEDOR DE TARJETAS -->
+        <div class="row g-4">
+
+            <!-- TARJETA 1 -->
+            <div class="col-md-6">
+                <div class="card shadow border-primary h-100 p-3">
+                    <!-- FILA SUPERIOR CON IMAGEN Y TÍTULO -->
+                    <div class="row g-3 align-items-start">
+                        <div class="col-12 col-lg-6 d-flex justify-content-center">
+                            <img src="/img/projects/landing-educativa/landing-educativa-cover.jpg"
+                                class="img-fluid rounded" alt="Landing Page Educativa">
+                        </div>
+                        <div class="col-12 col-lg-6 text-center text-md-start">
+                            <h5 class="fw-bold mb-1">Landing Page Educativa</h5>
+                            <p class="text-muted fw-semibold mb-0">Sitio responsivo para recursos académicos</p>
+                        </div>
+                    </div>
+                    <!-- FILA INFERIOR CON DESCRIPCIÓN Y BOTÓN -->
+                    <div class="row mt-3">
+                        <div class="col-12 text-center text-md-start">
+                            <p class="mb-3">
+                                Proyecto escolar para Instituto Tecnológico Superior de Salvatierra. Diseño de
+                                wireframes en Figma, maquetado con Bootstrap, validación de formularios.
+                            </p>
+                            <div class="d-flex justify-content-center justify-content-md-end">
+                                <!-- BOTÓN QUE ABRE EL MODAL -->
+                                <button class="btn btn-ver ver-mas-btn" data-file="landing-educativa.html"
+                                    data-title="Landing Page Educativa">
+                                    Ver más
+                                </button>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- TARJETA 2 -->
+            <div class="col-md-6">
+                <div class="card shadow border-primary h-100 p-3">
+                    <div class="row g-3 align-items-start">
+                        <div class="col-12 col-lg-6 d-flex justify-content-center">
+                            <img src="/img/projects/ecommerce-local/ecommerce-local-cover.jpg" class="img-fluid rounded"
+                                alt="E-commerce Local">
+                        </div>
+                        <div class="col-12 col-lg-6 text-center text-md-start">
+                            <h5 class="fw-bold mb-1">E-commerce Local</h5>
+                            <p class="text-muted fw-semibold mb-0">Tienda en línea para venta de productos</p>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-12 text-center text-md-start">
+                            <p class="mb-3">
+                                Simulación de carrito de compras, prototipo visual en Figma y estructura lista para
+                                pasarela de pago. Diseño adaptado a móviles.
+                            </p>
+                            <div class="d-flex justify-content-center justify-content-md-end">
+                                <button class="btn btn-ver ver-mas-btn" data-file="ecommerce-local.html"
+                                    data-title="E-commerce Local">
+                                    Ver más
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- TARJETA 3 -->
+            <div class="col-md-6">
+                <div class="card shadow border-primary h-100 p-3">
+                    <div class="row g-3 align-items-start">
+                        <div class="col-12 col-lg-6 d-flex justify-content-center">
+                            <img src="/img/projects/dashboard-ventas/dashboard-ventas-cover.JPG"
+                                class="img-fluid rounded" alt="Dashboard de Ventas">
+                        </div>
+                        <div class="col-12 col-lg-6 text-center text-md-start">
+                            <h5 class="fw-bold mb-1">Dashboard de Ventas</h5>
+                            <p class="text-muted fw-semibold mb-0">Panel interactivo para análisis de ventas</p>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-12 text-center text-md-start">
+                            <p class="mb-3">
+                                Uso de Excel y Google Sheets para gráficos, reportes y tablas dinámicas. Enfocado a
+                                microempresas.
+                            </p>
+                            <div class="d-flex justify-content-center justify-content-md-end">
+                                <button class="btn btn-ver ver-mas-btn" data-file="dashboard-ventas.html"
+                                    data-title="Dashboard de Ventas">Ver
+                                    más</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- TARJETA 4 -->
+            <div class="col-md-6">
+                <div class="card shadow border-primary h-100 p-3">
+                    <div class="row g-3 align-items-start">
+                        <div class="col-12 col-lg-6 d-flex justify-content-center">
+                            <img src="/img/projects/portafolio-personal/portafolio.personal-cover.JPG"
+                                class="img-fluid rounded" alt="Portafolio Personal">
+                        </div>
+                        <div class="col-12 col-lg-6 text-center text-md-start">
+                            <h5 class="fw-bold mb-1">Portafolio Personal</h5>
+                            <p class="text-muted fw-semibold mb-0">Sitio web para mostrar habilidades, CV y proyectos
+                                destacados</p>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-12 text-center text-md-start">
+                            <p class="mb-3">
+                                Desarrollado con Bootstrap, incluye galería, contacto y enlaces a redes. Wireframes en
+                                Figma.
+                            </p>
+                            <div class="d-flex justify-content-center justify-content-md-end">
+                                <button class="btn btn-ver ver-mas-btn" data-file="portafolio-personal.html"
+                                    data-title="Portafolio Personal">Ver
+                                    más</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- TARJETA 5 -->
+            <div class="col-md-6">
+                <div class="card shadow border-primary h-100 p-3">
+                    <div class="row g-3 align-items-start">
+                        <div class="col-12 col-lg-6 d-flex justify-content-center">
+                            <img src="/img/projects/blog-cultural/blog-cultural-cover.jpg" class="img-fluid rounded"
+                                alt="Rediseño de Blog Cultural">
+                        </div>
+                        <div class="col-12 col-lg-6 text-center text-md-start">
+                            <h5 class="fw-bold mb-1">Rediseño de Blog Cultural</h5>
+                            <p class="text-muted fw-semibold mb-0">Blog optimizado para mejor lectura</p>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-12 text-center text-md-start">
+                            <p class="mb-3">
+                                Reestructuración de categorías y tipografía. Prototipo navegable en Figma con mejoras
+                                visuales.
+                            </p>
+                            <div class="d-flex justify-content-center justify-content-md-end">
+                                <button class="btn btn-ver ver-mas-btn" data-file="blog-cultural.html"
+                                    data-title="Rediseño de Blog Cultural">Ver
+                                    más</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- TARJETA 6 -->
+            <div class="col-md-6">
+                <div class="card shadow border-primary h-100 p-3">
+                    <div class="row g-3 align-items-start">
+                        <div class="col-12 col-lg-6 d-flex justify-content-center">
+                            <img src="/img/projects/landing-evento/evento-cover.jpg" class="img-fluid rounded"
+                                alt="Landing Page de Evento">
+                        </div>
+                        <div class="col-12 col-lg-6 text-center text-md-start">
+                            <h5 class="fw-bold mb-1">Landing Page de Evento</h5>
+                            <p class="text-muted fw-semibold mb-0">Promoción de evento académico</p>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-12 text-center text-md-start">
+                            <p class="mb-3">
+                                Formulario con Google Forms, cuenta regresiva, cronograma e información de ponentes.
+                            </p>
+                            <div class="d-flex justify-content-center justify-content-md-end">
+                                <button class="btn btn-ver ver-mas-btn" data-file="landing-evento.html"
+                                    data-title="Landing Page de Evento">Ver
+                                    más</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- CONTENEDOR DEL PIE DE PÁGINA -->
+    <div id="footer-container" class="mt-5"></div>
+
+    <!-- SCRIPTS DE BOOTSTRAP -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+
+    <!-- SCRIPT DE SWIPER -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <!-- CONFIGURACIÓN DEL EFECTO SWIPER -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            effect: "coverflow",
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: "auto",
+            coverflowEffect: {
+                rotate: 50,
+                stretch: 0,
+                depth: 100,
+                modifier: 1,
+                slideShadows: true,
+            },
+            loop: true,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+
+    <!-- SCRIPT PARA CARGAR CONTENIDO DINÁMICO EN EL MODAL -->
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const botones = document.querySelectorAll(".ver-mas-btn");
+
+            botones.forEach(boton => {
+                boton.addEventListener("click", async (e) => {
+                    e.preventDefault();
+
+                    const fileName = boton.getAttribute("data-file");
+                    const titulo = boton.getAttribute("data-title");
+
+                    try {
+                        const response = await fetch(fileName);
+                        if (!response.ok) throw new Error("No se encontró el archivo");
+
+                        const contenido = await response.text();
+
+                        document.getElementById("dynamicModalTitle").textContent = titulo;
+
+                        const modalBody = document.querySelector("#coverflowModal .modal-body");
+                        modalBody.innerHTML = contenido;
+
+                        if (typeof Swiper !== 'undefined') {
+                            new Swiper(".mySwiper", {
+                                navigation: {
+                                    nextEl: ".swiper-button-next",
+                                    prevEl: ".swiper-button-prev",
+                                },
+                                loop: true,
+                            });
+                        }
+
+                        const modal = new bootstrap.Modal(document.getElementById("coverflowModal"));
+                        modal.show();
+
+                    } catch (error) {
+                        console.error("Error al cargar contenido del modal:", error);
+                        alert("No se pudo cargar el contenido del proyecto.");
+                    }
+                });
+            });
+        });
+    </script>
+
+</body>
+
+</html>

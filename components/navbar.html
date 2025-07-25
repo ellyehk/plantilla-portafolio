@@ -1,0 +1,108 @@
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+    /* SCROLL SUAVE */
+    html {
+        scroll-behavior: smooth;
+    }
+
+    /* BODY */
+    body {
+        /* FONT EN TODO LA PAGINA */
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+        font-weight: 400;
+    }
+
+    /* Links normales: blanco pero con opacidad */
+    .navbar .nav-link {
+        color: rgba(255, 255, 255, 0.5);
+        /* Blanco 50% transparente */
+        transition: color 0.3s ease;
+    }
+
+    /* Scrollspy link ACTIVO */
+    .navbar .nav-link.active {
+        color: rgba(255, 255, 255, 1) !important;
+        /* Blanco sólido */
+    }
+
+    /* Hover */
+    .navbar .nav-link:hover {
+        color: rgba(255, 255, 255, 1);
+        /* También blanco sólido */
+    }
+
+    /* FONDO DEL NAVBAR */
+    .bg-navbar {
+        background-color: #1E40AB;
+    }
+
+    /* Hacer el icono hamburguesa blanco */
+    .navbar-toggler-icon {
+        filter: invert(1);
+    }
+
+    /* QUITAR BORDE DEL MENU HAMBURGUESA */
+    .navbar-toggler {
+        border: none !important;
+        box-shadow: none !important;
+        outline: none !important;
+    }
+
+    /* COLOR BOTONES */
+    .btn-custom {
+        background-color: #1E40AB;
+        /* Reemplaza por tu color */
+        color: white;
+        border: none;
+    }
+
+    /* HOVER DE BOTONES */
+    .btn-custom:hover {
+        background-color: #ffffff;
+        border: 2px solid #1E40AB;
+    }
+
+    /* BORDE PERSONALIZADO */
+    .border-custom {
+        border: 2px solid #1E40AB;
+    }
+</style>
+
+<!-- NAVBAR -->
+<nav id="navbarMain" class="navbar navbar-expand-md navbar-light fixed-top bg-navbar">
+    <div class="container-fluid">
+
+        <!-- BRAND -->
+        <a class="navbar-brand ms-3 ms-md-5" href="/index.php#inicio">
+            <img src="/img/logos/logo-academia.svg" alt="Logo" width="120">
+        </a>
+
+        <!-- BOTÓN HAMBURGUESA -->
+        <button class="navbar-toggler me-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+            aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- LINKS -->
+        <div class="collapse navbar-collapse justify-content-md-end text-center me-0 me-md-5" id="navbarNav">
+            <ul class="navbar-nav mx-auto mx-md-0 gap-md-3 gap-1">
+                <li class="nav-item">
+                    <a href="/index.php#inicio" class="nav-link fw-semibold">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/index.php#sobre-mi" class="nav-link fw-semibold">Sobre mí</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/index.php#proyectos" class="nav-link fw-semibold">Proyectos</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/index.php#contacto" class="nav-link fw-semibold">Contacto</a>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+</nav>

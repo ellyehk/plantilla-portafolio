@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* BODY */
+body {
+    /* FONT EN TODO LA PAGINA */
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.bg-modal {
+    background-color: #1E40AB;
+}
+
+
+section {
+    scroll-margin-top: 100px;
+    /* Ajusta según la altura del navbar */
+}
+
+/* FORMATO DE LOS PUNTOS */
+ul.timeline {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* LINEA */
+ul.timeline:before {
+    content: ' ';
+    background: #1E40AB;
+    position: absolute;
+    width: 3px;
+    height: 120%;
+    z-index: 400;
+}
+
+/* ESPACIADO DE LA INFO */
+ul.timeline>li {
+    padding-left: 50px;
+}
+
+/* PUNTOS AZULES */
+ul.timeline>li:before {
+    content: ' ';
+    background: #1E40AB;
+    display: inline-block;
+    position: absolute;
+    border-radius: 50%;
+    border: 3px solid #1E40AB;
+    left: 4px;
+    width: 20px;
+    height: 20px;
+    z-index: 401;
+}
+
+/* ELIMINA LA LINEA AL FINAL */
+ul.timeline.timeline-end:before {
+    display: none;
+}
+
+/* ====== RESPONSIVO ====== */
+@media (max-width: 767px) {
+
+    /* Ocultamos línea y puntos en móviles */
+    ul.timeline:before,
+    ul.timeline>li:before {
+        display: none;
+    }
+
+    /* Quitamos padding y centramos contenido */
+    ul.timeline>li {
+        padding-left: 0;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    /* Hacemos que cada columna ocupe todo el ancho */
+    .timeline-row>div {
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+
+    /* Ajustamos márgenes en los íconos */
+    .timeline-row img {
+        margin: 5px;
+    }
+}
+
+/* COLOR BOTONES */
+.btn-custom {
+    background-color: #1E40AB;
+    /* Reemplaza por tu color */
+    color: white;
+    border: none;
+}
+
+/* HOVER DE BOTONES */
+.btn-custom:hover {
+    background-color: #ffffff;
+    border: 2px solid #1E40AB;
+}
+
+/* BORDE PERSONALIZADO */
+.border-custom {
+    border: 2px solid #1E40AB;
+}
+
+/* FONDO DE CONTACTO */
+.bg-contact {
+    background-color: #E6ECFF;
+    color: #1E40AB;
+}
+
+/* INPUT DEL FORMULARIO */
+.custom-input {
+    border: none;
+    border-bottom: 2px solid #1E40AB;
+    border-radius: 0;
+    background-color: transparent;
+    color: #000;
+    font-weight: 400;
+    outline: none;
+}
+
+/* PLACEHOLDER */
+.custom-input::placeholder {
+    color: #1E40AB;
+    opacity: 100;
+}
+
+/* QUITAR FONDO DEL INPUT */
+.custom-input:focus {
+    background-color: transparent;
+    box-shadow: none;
+    color: #000;
+}
