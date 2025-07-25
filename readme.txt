@@ -4,11 +4,11 @@ Este es un proyecto web que muestra un **portafolio de proyectos** con tarjetas 
 
 ## 🚀 Características
 
-- ✅ **Diseño responsivo** con Bootstrap 5.  
-- ✅ **Carga dinámica de contenido** en modales.  
-- ✅ **Efectos interactivos** con Swiper.js.  
-- ✅ **Organización modular** de imágenes y archivos HTML.  
-- ✅ **Compatible con GitHub Pages o cualquier hosting**.  
+- **Diseño responsivo** con Bootstrap 5.  
+- **Carga dinámica de contenido** en modales.  
+- **Efectos interactivos** con Swiper.js.  
+- **Organización modular** de imágenes y archivos HTML.  
+- **Compatible con GitHub Pages o cualquier hosting**.  
 
 ---
 
