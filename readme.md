@@ -35,4 +35,5 @@ El proceso para empezar a usar la plantilla es muy sencillo.
 Obtén una copia local del proyecto:
 
 
-git clone [https://github.com/tu-usuario/PRUEBAWEB.git](https://github.com/tu-usuario/PRUEBAWEB.git)
+git clone https://github.com/ellyehk/plantilla-portafolio.git
+
